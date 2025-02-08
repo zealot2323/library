@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>My Library</h1>
+        <dialog>
+            
+            <form class="addBook" id="addBook">
+                <button class="close">X</button>
+                <label for="name">Title:</label>
+                <input type="text" id="title" name="title"> 
+                <label for="name">Author:</label>
+                <input type="text" id="author" name="author">
+                <label for="name"># of Pages:</label>
+                <input type="text" id="pages" name="pages">
+                <label for="name">Read?</label>
+                <input type="checkbox" id="read" name="read">
+                <button class="submit" type="submit">Submit</button>
+            </form>
+          </dialog>
+        <button class="add">Add Book</button>
+    </div>
+    <div class="library">
+    </div>
+</body>
+<script src="library.js"></script>
+</html>

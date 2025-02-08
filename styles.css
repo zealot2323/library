@@ -1,0 +1,96 @@
+
+.texturina-light {
+    font-family: "Texturina", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.texturina-bold {
+    font-family: "Texturina", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: bold;
+}
+
+* {
+    font-family: 'Texturina';
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+h1, h2, h3, p {
+    margin: 5px;
+    padding: 0px;
+}
+
+.header {
+    padding: 25px;
+}
+
+.library {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+    gap: 25px;
+    padding: 25px;
+}
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(251, 210, 106);
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgb(0, 0, 0);
+    box-shadow: inset 15px 0px 0px -2px rgb(50, 76, 9);
+    padding: 10px 30px;
+}
+
+button:hover {
+    opacity: 85%;
+}
+
+button {
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 5px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.toggle, .add, .submit {
+    background-color: rgb(50, 76, 9) ;
+}
+
+.remove {
+    background-color: darkred;
+}
+
+.close {
+    color: black;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 2px;
+    width: 30px;
+    align-self: flex-end;
+    justify-self: center;
+}
+
+.addBook {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px;
+    width: 250px;
+}
+
+::backdrop {
+    background-color: darkgrey;
+    opacity: 0.75;
+  }
+
+#read {
+    align-self: flex-start;
+}
